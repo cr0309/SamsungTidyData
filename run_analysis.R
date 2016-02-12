@@ -114,4 +114,4 @@ colnames(step2) <- c("Subject", "Activity", betternewNames)
 meanedSamsung <- tbl_df(step2)
 
 # uncomment to create txt file of the final tidy data
-## write.table(meanedSamsung,file="tidydata.txt",row.names = FALSE)
+## write.table(meanedSamsung,file="tidydata.txt",row.name = FALSE)
