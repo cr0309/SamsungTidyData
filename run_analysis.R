@@ -112,5 +112,6 @@ for (i in 1:length(toBeRenamed)){
 }
 colnames(step2) <- c("Subject", "Activity", betternewNames)
 meanedSamsung <- tbl_df(step2)
-?write.table
-write.table(meanedSamsung,file="tidydata.txt",row.names = FALSE)
+
+# uncomment to create txt file of the final tidy data
+## write.table(meanedSamsung,file="tidydata.txt",row.names = FALSE)
