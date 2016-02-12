@@ -1,0 +1,19 @@
+Subject = Range[1,30];categorical
+Activities = "WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING"
+
+The remaining columns are averaged signal data for every Subject and Subject's Activity.
+
+The training sets and testing sets were read in for Subject, X, and Y. 
+The order of columns combined need to be Subjects, Y, X. 
+The training set and testing set can be appended in any order.
+
+Subsetting on columns were on standard deviation "std()" and mean "mean()", reducing
+the amount of total columns to 66.
+The subsetted table was then sorted on subject, then activity.
+
+Activity levels were made more descriptive by changing the factors 1-6 to the levels shown above
+in "Activities".
+
+Column names were renamed to delete the dash marks and to capitalize either "mean" or "std".
+
+Finally, the data was reduced by summarizing over the columns by averaging the activities by subject.
